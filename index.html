@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *,body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+.center{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0px -1px 16px 4px #0000003d;
+    border-radius: 10px;
+    gap: 8px;
+}
+input{
+padding: 15px;
+width: 90%;
+border-radius: 5px;
+border: none;
+padding-left: 10px;
+background-color: #e5e5e5;
+outline: none;
+font-size: 17px;
+}
+
+input.submit{
+    width: 200px;
+    background-color: rgb(0, 128, 255);
+    cursor: pointer;
+}
+small{
+    color: red;
+    font-size: 16px;
+    margin: 4px;
+    align-self: flex-start;
+    padding-left: 20px;
+}
+</style>
+<body>
+   <div class="center">
+    <form action="/submit.php">
+        <h2>Submit details</h2>
+        <br>
+        <input type="text" placeholder="name">
+        <small class="error" id="name-error"></small>
+
+        <input type="email" placeholder="email">
+        <small class="error" id="email-error"></small>
+
+        <input type="password" placeholder="password">
+        <small class="error" id="password-error"></small>
+
+        <input type="password" placeholder="Rewrite password">
+        <small class="error" id="rewrite-error"></small>
+
+        <input type="submit" class="submit">
+
+    </form>
+   </div>
+</body>
+<script src=
+"main.js"></script>
+</html>
